@@ -552,7 +552,7 @@ function RsrcDownload() {
 	if (localStorage.lvl >= 8 && localStorage.useva == true) {
 		Notify("A zip file containing resources from all of the tutorials has been downloaded.<br><br>" +
 			   "The password to access the files is: <strong>ICT@WGA</strong>", 60);
-		window.location = (loc == 'loader.html') ? 'content/rsrc/rsrc.zip':'../../content/rsrc/rsrc.zip';
+		window.location = (loc == 'loader.html') ? 'content/rsrc/rsrc.zip':'../content/rsrc/rsrc.zip';
 	}
 }
 //HELPER END--------------------------------------------------------------------------------------------->>
