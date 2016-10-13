@@ -1,0 +1,121 @@
+/* CSS Document */
+/* entire container, keeps perspective */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.logo-container {
+	-ms-perspective: 1000;
+	-moz-perspective: 1000;
+	-webkit-perspective: 1000;
+	-ms-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	position: absolute;
+	left: 5px;
+	top: 100px;
+	cursor: pointer;
+	
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay: 2s;
+}
+
+	/*  UPDATED! flip the pane when hovered */
+	.logo-container:hover .backlogo {
+		-ms-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	}
+	.logo-container:hover .frontlogo {
+		-ms-transform: rotateY(180deg);
+	    -moz-transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+	}
+
+.logo-container, .frontlogo, .backlogo {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	/*border-radius : 50% / 10%;*/
+}
+
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	
+	-ms-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.frontlogo, .backlogo {
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	
+	transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.frontlogo {
+	z-index: 2;
+	-ms-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	background: url('../img/style/frontlogo.png') no-repeat scroll 0 0 transparent;
+	background-color: #222;
+}
+
+/* back, initially hidden pane */
+.backlogo {
+	-ms-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	background: url('../img/style/backlogo.png') no-repeat scroll 0 0 transparent;
+	background-color: #cccccc;
+	-ms-animation: colourpop 10s 3s infinite linear;
+	-moz-animation: colourpop 10s 3s infinite linear;
+	-webkit-animation: colourpop 10s 3s infinite linear;
+}
+
+@-ms-keyframes colourpop
+{
+0%   {background-color: red;}
+20%   {background-color: purple;}
+40%  {background-color: blue;}
+60%  {background-color: green;}
+80%  {background-color: yellow;}
+100% {background-color: red;}
+}
+@-moz-keyframes colourpop
+{
+0%   {background-color: red;}
+20%   {background-color: purple;}
+40%  {background-color: blue;}
+60%  {background-color: green;}
+80%  {background-color: yellow;}
+100% {background-color: red;}
+}
+@-webkit-keyframes colourpop
+{
+0%   {background-color: red;}
+20%   {background-color: purple;}
+40%  {background-color: blue;}
+60%  {background-color: green;}
+80%  {background-color: yellow;}
+100% {background-color: red;}
+}

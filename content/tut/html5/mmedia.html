@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section data-transition="fade" style="font-size: 24px; text-align: center;">
+					<h2 style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Multimedia</h2>
+					<p style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Welcome  to the multimedia topic. The next few slides will briefly explain the standard  syntax of multimedia elements in order to add them to your website. In later  more advanced topics, you will be able to learn how to control multimedia using  code.</p>
+                     <br />
+</section>
+<section>
+<div id="DivContent">
+<h6>Multimedia</h6>
+  <h2>The Video tag</h2>
+<p>As explained earlier it is now easier than ever  before to embed a video into an HTML5 page. Unfortunately one of the major limitations  is compatibility i.e. older browsers that have not native HTML5 support (for  example Internet Explorer 6) will not be able to play HTML5 Video. All versions  of Chrome and Firefox support &lt;video&gt; whereas it is only supported by  Internet Explorer 9 or newer.</p>
+</div>
+</section>
+<section> <!--prettyPrint()-->
+<div id="DivContent">
+<h6>Multimedia</h6>
+  <h2>Syntax</h2>
+<p>Assuming you are familiar with the core concepts of HTML, you can use the code snippet below to add a video element to the body tag of a webpage. The syntax  is very easy to follow:</p>
+<h2><br/></h2>
+<pre class="prettyprint"><code data-trim style="font-size: 18px;">  
+<p>&lt;video id=&quot;Identifier&quot; controls poster=&quot;&quot; loop&gt;<br>
+  &lt;source  src=&quot;vid/home.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+&lt;/video&gt;</p>
+ </code></pre>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>Multimedia</h6>
+  <h2>Syntax Explained [1/2]</h2>
+<p>We begin with creating a video tag. Within a video tag the  actual relative or absolute path of the video the needs to be played is set.  This is set using the &lsquo;source&rsquo; tag. The source tag doesn&rsquo;t require an enclosing  tag as it is only one line. The path is provided in the &lsquo;src&rsquo; property of the  source tag. The type property is used to tell the browser what is the format of  the video that needs to be played so that it can decode it appropriately.</p></br>
+  <p>Finally additional property tags can be added to the video  tag for an even better experience.</p>
+</div>
+</section>
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Multimedia</h6>
+  <section id="fragments" style="top: 146px; display: block;" class="present">
+  <h2>Syntax Explained [2/2]</h2>
+  <br/>
+  <ul>
+    <li class="fragment visible" data-fragment-index="1"><strong>Id</strong> – This property sets a unique identifier to the video so that it can selected  as an object required for CSS styling and JavaScript.</li>
+    <li class="fragment visible" data-fragment-index="2"><strong>Controls</strong> – This property simply informs the browser to show the native controls which  includes play, pause, seek etc. Although native controls vary from browser to  browser, they save the hassle of additional coding and designing buttons that  provide the same functionality.</li>
+    <li class="fragment visible" data-fragment-index="3"><strong>Poster</strong> – A poster property acts like a thumbnail of the video. The poster value  contains a reference of an image which is displayed at standby (before playing  the video). This is quite useful in informing users what the video is about.</li>
+    <li class="fragment visible" data-fragment-index="4"><strong>Autoplay</strong> – Generally not combined with a poster property, this simply tells a browser to  automatically play the video as soon as the browser is loaded. </li>
+    <li class="fragment visible" data-fragment-index="5"><strong>Loop</strong> – Another property which doesn&rsquo;t require a value. It allows the developer to  repeat a video every time it ends.</li>
+  </ul>
+  </section>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>Multimedia</h6>
+<h2>The  Audio tag</h2>
+<p>The  audio tag has pretty much the same syntax as the video tag except for the need  of a poster. Like the video tag, all versions of Chrome and Firefox support  &lt;audio&gt; whereas it is only supported by Internet Explorer 9 or newer. The  audio tag is quite useful in creating sound effects and background scores. This  product itself makes use of the audio tag for the background score and sound  effects on mouse hover of menu element. A sample audio source-code can be seen  below which needs to be added to a body tag in order to make it work.</p>
+<h4><br /></h4>
+<pre class="prettyprint"><code data-trim style="font-size: 18px;">
+<p>&lt;audio  id=&quot;bkgscore&quot;&gt;<br>
+  &lt;source src=&quot;mp3/JPong.mp3&quot;&gt;<br>
+&lt;/audio&gt;</p>
+</code></pre>
+<h4><br /></h4>
+<p>A sample  file is provided below, press the play button to listen to it. It is suggested that you mute background audio from settings before playing this audio file.</p>
+<audio controls onPlay="ToggleSnd()" onPause="ToggleSnd()">
+	<source src="../../mp3/JPong.mp3">
+</audio>
+</div>
+</section>
+<section class="end-slide">
+       	<section>
+        	<h2>End of HTML5 Basics</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+        </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+</section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 8, "sect":"html5", "url":"mmedia", "newurl":"other"}</var>
+</body>
+</html>

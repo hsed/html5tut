@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section data-transition="fade" style="font-size: 24px; text-align: center;">
+	<h2 style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Other CSS3 features</h2>
+	<p align="center" style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">CSS3 is not just transitions, transformations and animations. This last tutorial will give you an  insight on some other quite useful features that CSS3 brought along with it. These  features can act as icing on the cake and allow you to further enhance your  e-book/website to make it even more compelling to use.</p>
+    <p align="center" style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Press the right arrow key &quot;→&quot; on  your keyboard to continue.</p>
+<br />
+</section>
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+  <h2>Text Shadow</h2>
+<p>The first feature discussed in this section  is text shadow. This effect is not new but something Microsoft&reg;, Adobe&reg; and  other software vendors have been using for ages in their products. A text  shadow gives the text a 3D effect and makes it look more eye-catchy depending  on how you implement it. The text shadow property is defined in the image below  which you can click to zoom. The syntax has been applied on the example text &lsquo;Hello&rsquo; just above it. </p>
+	<div class="imgbox middle" id="img">
+    		<img src="../../img/tut/css3/5.gif" title="CSS3 Text Shadow Syntax">
+    		<div class="details">
+			<h5>Click to zoom</h5>
+   	</div>
+  </div>
+ <br />
+ <p style="color: #333; font-weight: bold; font-size: 50px; text-shadow: 3px 2px 3px #8F4; margin-left: 46%;">Hello</p>
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+  <h2>Box Shadow</h2>
+<p>Box shadow is another property new in CSS3.  Using box-shadow a user can add show around any CSS3 element. Box shadow is  quite popular among CSS3 designers as it can be used in a variety of ways. This  product also uses box-shadow in several areas. One of them is the outline  between the side-menu bar and the content window. Hence box shadow can be  useful for borders while giving elements a 3D elevated look. The code example is as follows:</p>
+<br />
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box { …  box-shadow: 7px 7px 5px 0px #CCC; …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<br />
+<p>The syntax for the box shadow property is further explained (along with an example) on the next slide.</p>
+</div>
+</section>
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Other CSS3 Features</h6>
+  <section id="fragments" style="top: 146px; display: block;" class="present">
+  <h2>Box Shadow Syntax Explained</h2>
+  <h3>The explanation of the syntax and an example is as follows:</h3>
+  <ul>
+    <li class="fragment roll-in visible" data-fragment-index="1">The first two values are X and Y offsets and the third one is blur as the text-shadow property.</li>
+    <li class="fragment roll-in visible" data-fragment-index="2">The fourth value is the ‘spread’ that defines how much to expand a shadow.</li>
+    <li class="fragment roll-in visible" data-fragment-index="3">Flexible – CSS allows developers the flexibility to change the design and layout of a webpage swiftly without changing any part of the visible content. This is really useful to create multi-themed websites.</li>
+    <li class="fragment roll-in visible" data-fragment-index="4">Finally another value ‘inset’ can be added in the beginning and simply causes the object/box to be inside the shadow rather than the shadow being outside it which is what happens by default.</li>
+    <div id="box1"  class="trans shadow fragment roll-in visible" data-fragment-index="5">Box-Shadow</div>
+    <h2><br /></h2>
+    <h2><br /></h2>
+    <h2><br /></h2>
+    <p class="fragment roll-in visible" data-fragment-index="6" style="text-align: center; font-style:italic;">---End of slide---</p>
+  </ul>
+  </section>
+</div>
+</section>
+
+
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+  <h2>Border Radius</h2>
+<p>Border radius is a CSS3 property that allows you to create rounded shapes. Before CSS3 it was quite hard to create rounded objects without any plugins. Now this feature is supported natively in browsers and you can create anything from rounded rectangles to even semi-circles! A border radius is usually measured in either pixels or percent. The values go in clockwise order: top-left, top-right, bottom-right and then bottom-left. Border-radius is used extensively in this product e.g. the circles and rounded rectangles used for previous examples.</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box:active { …  border-radius: 5px 5px 10px 10px; …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<p>The three examples below are as follows: circle with 50% border radius; rounded rectangle with 5% border radius and lastly an oval with 30% and 80% border-radius. Can you guess any other property used on the last example?</p>
+<div id="box1"  class="trans rot" style="left: 20%; border-radius: 50%; transform: none; box-shadow: 0px 0px 10px 3px #0C0;">Circle</div>
+<div id="box1"  class="trans pos" style="transform: none; box-shadow: 0px 0px 10px 3px #0C0;">Curved</div>
+<div id="box1"  class="trans size" style="left: 70%; border-radius: 30% 80%; transform: rotate(45deg); box-shadow: 0px 0px 10px 3px #0C0;">Oval</div>
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+  <h2>Linear Gradients</h2>
+<p>A gradient is the use of two or more colours to create a blend or  pattern. This pattern can often make icons/backgrounds stand out. If used  correctly they are can become an elegant part of your website. Like most other  CSS3 styles, gradients need to be tested and prototyped several times before  finding the perfect pattern. This can be done using HTML editors for example in the Adobe® Dreamweaver context menu, you can use the colour picker tool. There are  two types of gradients linear or radial.</p>
+<p>The angle value define in which direction should the gradient be  applied e.g. top &rarr; bottom. The percentages define how much of that colour  is to be used from 0% to 100%. The first colour comes on top of the second and  so on. To preview the gradient effect, add the syntax in the image to a background  property of an element.</p>
+<div class="imgbox middle" id="img">
+    		<img src="../../img/tut/css3/6.gif" title="CSS3 Linear Gradient Syntax">
+    		<div class="details">
+			<h5>Click to zoom</h5>
+   	</div>
+  </div>
+ <br />
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+  <h2>Radial Gradients</h2>
+<p>Radial gradients define a gradient in a circular path. They work  more like our Earth where the different layers begin and end at different radii  of a defined circle. Radial gradients can also be defined in the background  property of an element and can consist of two or more colour values. There is  no angle requirement for a radial gradient because it is in every direction. An  optional new argument is &lsquo;shape&rsquo; which can be either circle or ellipse.</p>
+<br />
+<div class="imgbox middle" id="img">
+    		<img src="../../img/tut/css3/7.gif" title="CSS3 Linear Gradient Syntax">
+    		<div class="details">
+			<h5>Click to zoom</h5>
+   	</div>
+  </div>
+ <br />
+</div>
+</section>
+
+
+
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformation</h6>
+  <h2>Examples of Gradients</h2>
+<p>Here are some examples of gradients and their corresponding CSS code. Keep in mind that as of now gradients cannot be animated using CSS alone.</p>
+ <h2><br /></h2>
+ <div class="tutbox skew1 grad1">Vertical</div>
+ <div class="tutbox bkg grad2">Diagonal</div>
+ <div class="tutbox anim3 grad3">Radial</div>
+ <div class="tutbox rot grad4">Radial</div>
+</div>
+</section>
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Other CSS3 Features</h6>
+	<section id="fragments" style="top: 146px; display: block;" class="present">
+ 	<h2>Task #3 [1/2]</h2>
+ 	<p>Here is your last task of the CSS3 section. In this task you will be designing some basic animated buttons for use on your website. You need to:</p>
+<ol>
+  <li class="fragment roll-in visible" data-fragment-index="1">Edit the files from Task #2 so  that the three div elements and their corresponding CSS styles are deleted.</li>
+  <li class="fragment roll-in visible" data-fragment-index="2">Create three &lt;div&gt;  elements and give them the same &lsquo;class&rsquo; name but different &lsquo;ids&rsquo; (#Box1, #Box2  and # Box3). You can use<em> any</em> width/height value but they should both be the  <em>same</em>.</li>
+  <li class="fragment roll-in visible" data-fragment-index="3">For #Box1 create an <strong>animation</strong> that:</li>
+  <ol style="list-style: lower-alpha;" class="fragment roll-in visible" data-fragment-index="3">
+    <li>Runs for <em>3s</em> and <em>without</em> any  delay</li>
+    <li>Has<em> infinite</em>, <em>alternating</em> iterations and an <em>ease</em> timing-function.</li>
+    <li>Goes from <strong>no box shadow</strong> at 0% to <em>20px spread </em><strong>box shadow</strong> of<em> #000 </em>at 100%</li>
+    <li><strong>Enlarges</strong> to <em>1.2x</em> the original  shape at 50% </li>
+  </ol>
+<br />
+    <p class="fragment roll-in visible" data-fragment-index="7" style="text-align: center; font-style:italic;">---End of slide (but not the task!)---</p>
+</ol>
+	</section>
+</div>
+</section>
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Other CSS3 Features</h6>
+	<section id="fragments" style="top: 146px; display: block;" class="present">
+ 	<h2>Task #3 [2/2]</h2>
+ 	<p>The task is continued as follows:</p>
+<ol start="4">
+  <li class="fragment roll-in visible" data-fragment-index="4">Set a <strong>linear background  gradient</strong> for #Box2 consisting of <em>red (0%)</em> and <em>yellow (100%)</em> at a <em>45deg angle</em>.</li>
+  <li class="fragment roll-in visible" data-fragment-index="5">For #Box3</li>
+  <ol style="list-style: lower-alpha;" class="fragment roll-in visible" data-fragment-index="5">
+    <li>Using the <strong>border-radius</strong> property, morph #Box3 into a <em>circle</em></li>
+    <li>Add a <strong>radial</strong> (circle) <strong>gradient</strong> with  <em>sun-like</em> colours</li>
+    <li>Set it to <em>rotate</em> through <em>275deg</em> along the <em>y-axis</em> on hover</li>
+  </ol>
+  <li class="fragment roll-in visible" data-fragment-index="6">Using the ID selector, position  the boxes side-by side.</li>
+<br />
+    <p class="fragment roll-in visible" data-fragment-index="7" style="text-align: center; font-style:italic;">---End of slide---</p>
+</ol>
+	</section>
+</div>
+</section>
+
+
+<section>
+<div id="DivContent">
+<h6>Other CSS3 Features</h6>
+ <h2>Task #3 – Results</h2>
+ <p>If you were able to successfully accomplish this task your webpage should look like this (live demo):</p>
+  <iframe align="middle" scrolling="no" src="../rsrc/css3/task3/CSS-TASK3.html" width="800" height="480"></iframe>
+</div>
+</section>
+
+<section class="end-slide">
+       	<section>
+        	<h2>End of HTML5 Introduction</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+        </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+  </section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 14, "sect":"css3", "url":"other", "newurl":""}</var>
+</body>
+</html>

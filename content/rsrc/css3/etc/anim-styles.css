@@ -1,0 +1,58 @@
+/* CSS Document */
+/*This document contains styles for the CSS3 Animation Examples slide. There are four examples, each being a circle div element. To make use of the below properties you need to define 4 div elements. All elements must have the same first class name tutbox. The second class name should be incremental example: anim1, anim2 etc. So the first div will have a class "tutbox anim1", the second will be "tutbox anim2" and so on.*/
+
+.tutbox { 
+	position: absolute; 
+	width: 240px; 
+	height: 240px; 
+	top: 35%; 
+	background: lightgreen; 
+	line-height: 240px;
+	border-radius: 50%;
+}
+
+.tutbox.anim1 {  left: 50px; -webkit-animation: pulse 2s linear alternate infinite; }
+.tutbox.anim2 {  left: 310px; background: #CF3; -webkit-animation: spin 5s 0s linear infinite; }
+.tutbox.anim3 {  left: 570px; background: #6E4; -webkit-animation: fblink 0.5s linear infinite; }
+.tutbox.anim4 {  left: 830px; background: #FC0; -webkit-animation: slideInSkew 3s ease alternate infinite; }
+
+@-webkit-keyframes pulse {
+
+  0%, 100% { transform: scale(1); background: #020; color: #FFF }
+
+  50% { transform: scale(1.2); background: #0F0; color: #000}
+
+
+}
+  
+ @-webkit-keyframes fblink { /* FastBlink*/
+	  from, to { opacity: 0 }
+	  50% { opacity: 1 }
+}
+  
+@-webkit-keyframes spin {
+    from { transform: rotateY(360deg); }
+    to { transform: rotateY(0deg); }
+}
+
+@-webkit-keyframes slideInSkew {
+    from {
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform: translateX(-200%) skewX(-45deg);
+    }
+
+    50% {
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform: translateX(0%) skewX(-45deg);
+    }
+
+    90% {
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform: translateX(0%) skewX(10deg);
+    }
+    
+    to {
+        -webkit-transform-origin: 0% 100%;
+        -webkit-transform:translateX(0%) skewX(0deg);
+    }
+}

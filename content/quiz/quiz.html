@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>HTML5 Quiz</title>
+<link rel="stylesheet" type="text/css" href="../../css/quiz.css">
+<link rel="shortcut icon" type="image/png" href="../../img/style/favico.png">
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/logo.css">
+<link rel="stylesheet" href="../../css/theme.css" id="theme">
+<link rel="stylesheet" type="text/css" href="../../css/selectify.css" />
+</head>
+
+<body class="menu-active">
+<SCRIPT src="../../js/anim.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/timesub.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript" src="../../js/notify.js"></script>
+<script type="text/javascript" src="../../js/prettify.js" defer></script>
+<script type="text/javascript" src="../../js/quiz.js" defer></script>
+
+
+<nav class="main-nav" id="main-nav">
+<h2>Sidebar</h2>
+<div class="side-list">
+  <a href="../../index.html" onMouseOver="if (localStorage.mute == false) select.play()">Home</a>
+  <a href="../tut/html5.html" onMouseOver="if (localStorage.mute == false) select.play()">HTML5</a>
+  <a href="../tut/css3.html" onMouseOver="if (localStorage.mute == false) select.play()">CSS3</a>
+  <a href="../rsrc/rsrc.html" onMouseOver="if (localStorage.mute == false) select.play()">Resources</a>
+  <a href="quiz.html" onMouseOver="if (localStorage.mute == false) select.play()">Quiz</a>
+  <a href="#" onMouseOver="if (localStorage.mute == false) select.play()" onClick="alert('Coming Soon!');">Help</a>
+  <a href="#" class="md-trigger" onMouseOver="if (localStorage.mute == false) select.play()">Settings</a>
+ </div>
+</nav>
+
+<div class="page-wrap bkg6" id="page-wrap">
+
+
+<header class="main-header" id="main-header">
+    <a id="nav-toggle" href="#" class=""><span></span></a>
+    <p id="quiz" class="HeadingTxt" style="margin-left: -6%; top: 1px;">HTML INTRO QUIZ<span>&nbsp;</span></p>
+    <div id="DivTime"><img src="../../img/style/loading.gif" hspace="20" vspace="15"></img></div>
+</header>
+
+<div class="logo-container" onClick="window.location='../../index.html';">
+	<div class="flipper"><div class="frontlogo"></div><div class="backlogo"></div></div>
+</div>
+
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+<audio id="notsnd">
+	<source src="../../mp3/notify.mp3" />
+</audio>
+
+
+<div class="maindiv">
+  <div class="question present"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div id=progdiv>1 of 5</div>
+</div>
+
+
+
+
+
+<!--div id="DivVA">
+  <label for="tb" id="lbl" style="color:#000;"><p id="va"><span>&nbsp;</span></p></label>
+  <input type="text" name="tb" id="tb" align="middle"/>
+  <input type="submit" name="btn" id="btn" value="Submit" onclick="Process()"/>
+ </div-->
+ 
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+
+</div>
+
+
+<!--div class="md-settings md-effect-13" id="modal-13">
+			<div class="md-content">
+				<h3>Settings</h3>
+				<div id="md-left-panel">
+					<ul>
+						<li>Name: <input type="text" name="nametb" id="nametb" placeholder="Please enter your name"/></li>
+                        <li>Theme:&nbsp; (disabled in quiz mode) 
+                        <div class="cs-select cs-skin-circular" tabindex="0" style="display: none;">
+            			<span class="cs-placeholder" style="background-image: url(img/1.png)">1</span>
+            			<div class="cs-options">
+            			<ul class="cs-ul">
+            				<li data-option="1" data-value="1" class="cs-li"><span>1</span></li>
+                			<li data-option="2" data-value="2" class="cs-li"><span>2</span></li>
+                			<li data-option="3" data-value="3" class="cs-li"><span>3</span></li>
+                			<li data-option="4" data-value="4" class="cs-li"><span>4</span></li>
+                			<li data-option="5" data-value="5" class="cs-li"><span>5</span></li>
+                			<li data-option="6" data-value="6" class="cs-li"><span>6</span></li>
+                			<li data-option="7" data-value="7" class="cs-li"><span>7</span></li>
+                			<li data-option="8" data-value="8" class="cs-li"><span>8</span></li>
+               			</ul>
+            			</div>
+            			</div>
+                        </li>
+                        <li>Transparency: 
+                        <input type="range" min="0" max="100" step="1" value="20" id="opacitysld"/>
+                        </li>
+                    </ul>
+                </div>
+                <div id="md-right-panel">
+                    <ul>
+                        <li style="margin-top: -10px;">Large Font: <div class="switch" style="margin-left: 7px;">
+  						<input id="fonttgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="fonttgl"></label>
+						</div></li>
+						<li style="margin-top: -10px;">Mute Audio: <div class="switch">
+  						<input id="mutetgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="mutetgl"></label>
+						</div></li>
+                        <li style="margin-top: -10px;">Animation: <div class="switch" style="margin-left: 14px;">
+  						<input id="animtgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="animtgl"></label>
+						</div></li>
+					</ul>
+				</div>
+                <div>
+                <button style="margin-left: 4%;" id="savebtn" class="md-close">Save &amp; Close</button>
+                <button id="discardbtn" class="md-close">Discard Changes</button>
+                <button id="resetbtn" class="md-close">Reset All</button>
+                </div>
+			</div>
+</div>
+<div class="md-overlay"></div--><!-- the overlay element -->
+</body>
+</html>

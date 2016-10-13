@@ -1,0 +1,215 @@
+/* CSS Document */
+/*Virtual Assistant*/
+
+#DivVA {
+	position: absolute;
+	top: 375px; 
+	left: 55%;
+	height: 90px;	
+	width: 600px;
+	margin-left: -350px;
+	/*padding: 5px;*/
+}
+
+#lbl {
+	position: relative;	
+	padding: 0 /*0 0 5px 0*/;
+	height: inherit;
+	width: inherit;
+	top: 0;
+	left: 0;
+	/*left: -15px;*/
+	display: block;
+}
+
+#DivVA p { 
+    position: relative; 
+    float: left;
+	font-family: "VT323", sans-serif;
+	font-weight: 400;
+  	font-size: 20pt;
+}
+
+#tb {
+	margin-left: 25%;
+	margin-top: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+	
+	body.va, html.va {
+		min-width: 0;
+		min-height: 0;
+		overflow: hidden;	
+	}
+	
+	body.va #Div3D {
+		top: -30px;
+		margin-left: -200px;
+		left: 50%;
+	}
+	
+	body.va #DivVA { 
+		top: 460px;
+		left: 50%;
+		margin-left: -200px;
+		height: 70px;
+		width: 400px;
+		/* padding: 5px; */
+	}
+	
+	body.va #DivVA p { 
+		font-family: "VT323", sans-serif;
+		font-weight: 100;
+  		font-size: 15pt;
+		text-align: center;
+	}
+	
+	body.va #tb {
+		margin-left: 20%;
+		margin-top: 0px;
+	}
+}
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+	#DivVA { 
+		position: absolute;
+		top: 400px;
+		left: 20px;
+		margin-left: 25%;
+		height: 70px;
+		width: 440px;
+		/* padding: 5px; */
+	}
+	
+	/*#lbl {
+		display: block; IS DEFAULT VAL
+	}
+	#tb {
+		margin-left: 25%;
+		margin-top: 15px;
+		
+	}*/
+	
+	.controls { /*right: -10px !important;*/ }
+	
+	#DivVA p { 
+		font-family: "VT323", sans-serif;
+		font-weight: 100;
+  		font-size: 15pt;
+		text-align: center;
+	}
+	
+	.logo-container, #Logo5, .home-btn1 {display: none;}
+}
+
+@media only screen and (min-width: 1200px) {
+	#tb {
+		margin-left: 30px;
+		margin-top: 25px;
+		
+	}
+	#DivVA {
+		left: 50%;
+		margin-left: -450px;
+		width: 900px;
+	    /*padding: 5px;*/
+	}
+	#lbl {
+		display: inline;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	/** {zoom: 0.98;} EXPERIMENTAL*/
+}
+
+#DivMatrix
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    width: 100%;
+    height: 100%;
+	z-index: -10;
+}
+
+#matrixbg {display: block; margin: 0; padding: 0; -webkit-filter: blur(2px); z-index: -10;}
+
+#Div3D
+{
+    position: absolute;
+    padding:0;
+    margin:0;
+	float: right;
+	right: -40px;
+	top: 50px;
+    width: 400px;
+    height: 500px;
+	z-index: -9;
+}
+
+
+/* start da css for da buttons */
+.btn {
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 11px;
+  text-decoration: none;
+  margin: 5px;
+  color: #fff;
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  transition: background 0.5s 0s ease;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 0px 0px 0px; /*<--Causes whiteline cause box-shad color=color=#fff*/
+}
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+
+.yellow:hover {
+  background-color: #FFDE29;
+}
+
+
+/*text box*/
+input#tb {
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  outline: none;
+}
+input#tb:focus,
+input#tb.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}

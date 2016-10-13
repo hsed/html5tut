@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>EBook Help</title>
+<link rel="shortcut icon" type="image/png" href="../../img/style/help.png">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+<link rel="stylesheet" type="text/css" href="../../css/animation_ms.css">
+<link rel="stylesheet" type="text/css" href="../../css/animation_moz.css">
+<link rel="stylesheet" type="text/css" href="../../css/leftnav.css">
+<link rel="stylesheet" type="text/css" href="../../css/logo.css">
+</head>
+
+<body>
+<SCRIPT src="../../js/anim.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/timesub.js" type="text/javascript"></SCRIPT>
+
+<div id="DivTime"><img src="../../img/style/loading.gif" hspace="20" vspace="15"></div>
+
+<div class="logo-container" onClick="window.location='../../index.html';">
+	<div class="flipper"><div class="frontlogo"></div><div class="backlogo"></div></div>
+</div>
+
+<div id="DivHeading" style="margin-left: -125px;">
+<object type="application/x-shockwave-flash" data="../../swf/style/help.swf" width="300" height="100">
+<param name="quality" value="best" />
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="wmode" value="transparent">
+</object>
+</div>
+
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+
+<!--menu-->
+<div id="DivMenu">
+<ul id="menu" onMouseOver="select.play()">
+	<li><a href="../../index.html" id="Home">Home</a></li>
+	<li>
+		<a href="../tut/tut.html">Online Services</a>
+		<ul>
+			<li><a href="../tut/css3/comun.html">Communication</a></li>
+			<li><a href="../tut/html5/__comrc.html">Commerce</a></li>
+			<li><a href="../os/edu/edu.html">Education</a></li>
+			<li><a href="../os/ent/ent.html">Entertainment</a></li>
+            <li><a href="../tut/jscript/ds.html">Download Services</a></li>
+		</ul>
+	</li>
+	<li><a href="../quiz/litia.html">L.I.T.I.A</a>
+        <ul>
+          <li><a href="../quiz/comun/comun.html">Communication</a></li>
+			<li><a href="../litia/edu/edu.html">Education</a></li>
+			<li><a href="../litia/ent/ent.html">Entertainment</a></li>
+          <li><a href="../quiz/bank/bank.html">Banking &amp; Shopping</a></li>
+            <li><a href="../litia/crime/crime.html">Crime Prevention</a></li>
+		</ul>		
+    </li>
+    	<li><a href="../rsrc/dd/dd.html">Digital Divide</a></li>
+	<li><a href="#">More<span id="DwnArw"></span></a>
+    	<ul>
+			<li><a href="help.html">Help</a></li>
+        	<li><a href="../../pdf/bib.pdf" onClick="nothing();" target="_blank">Biblography</a></li>
+			<li><a href="../../pdf/eval.pdf" onClick="nothing();" target="_blank">Evaluation</a></li>
+		</ul>
+  </li>		
+    <div id="lavalamp" style="left: 145px;"></div>
+</ul>
+</div>
+
+<div id="DivContent" style="width: 840px; height: 480px; margin-left: -420px;">
+<iframe src="topic/sub/help1.html" id="Frame" name="Frame"></iframe>
+</div>
+
+<div id="ToggleDiv" style="z-index: 2; top: 560px; left: 50%; margin-left: 255px;">
+	<a name="GoBack" id="BackBtn" class="ToggleBtn" onClick="GoBackHist();" style="border-radius: 10px;">&larr; Go Back</a>
+</div>
+</body>
+</html>

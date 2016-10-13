@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>CSS3 Quiz</title>
+<link rel="stylesheet" type="text/css" href="../../css/quiz.css">
+<link rel="shortcut icon" type="image/png" href="../../img/style/favico.png">
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/logo.css">
+<link rel="stylesheet" href="../../css/theme.css" id="theme">
+<link rel="stylesheet" type="text/css" href="../../css/selectify.css" />
+</head>
+
+<body class="menu-active">
+<SCRIPT src="../../js/anim.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/timesub.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript" src="../../js/notify.js"></script>
+<script type="text/javascript" src="../../js/prettify.js" defer></script>
+<script type="text/javascript" src="../../js/quiz.js" defer></script>
+
+
+<nav class="main-nav" id="main-nav">
+<h2>Sidebar</h2>
+<div class="side-list">
+  <a href="../../index.html" onMouseOver="if (localStorage.mute == false) select.play()">Home</a>
+  <a href="../tut/html5.html" onMouseOver="if (localStorage.mute == false) select.play()">HTML5</a>
+  <a href="../tut/css3.html" onMouseOver="if (localStorage.mute == false) select.play()">CSS3</a>
+  <a href="../rsrc/rsrc.html" onMouseOver="if (localStorage.mute == false) select.play()">Resources</a>
+  <a href="quiz.html" onMouseOver="if (localStorage.mute == false) select.play()">Quiz</a>
+  <a href="#" onMouseOver="if (localStorage.mute == false) select.play()" onClick="alert('Coming Soon!');">Help</a>
+  <a href="#" class="md-trigger" onMouseOver="if (localStorage.mute == false) select.play()">Settings</a>
+ </div>
+</nav>
+
+<div class="page-wrap bkg5" id="page-wrap">
+
+
+<header class="main-header" id="main-header">
+    <a id="nav-toggle" href="#" class=""><span></span></a>
+    <p id="quiz" class="HeadingTxt" style="margin-left: -6%; top: 1px;">CSS3 QUIZ<span>&nbsp;</span></p>
+    <div id="DivTime"><img src="../../img/style/loading.gif" hspace="20" vspace="15"></img></div>
+</header>
+
+<div class="logo-container" onClick="window.location='../../index.html';">
+	<div class="flipper"><div class="frontlogo"></div><div class="backlogo"></div></div>
+</div>
+
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+<audio id="notsnd">
+	<source src="../../mp3/notify.mp3" />
+</audio>
+
+<div id="columns">
+  <div class="column" draggable="true"></div>
+  <div class="column" draggable="true"></div>
+  <div class="column" draggable="true"></div>
+  <div class="column" draggable="true"></div>
+  <div class="column" draggable="true"></div>
+</div>
+
+<div class="maindiv css">
+<h5 id="part" style="margin: 0; font-variant:small-caps">Part I</h5>
+<div class="questionText">Match the code with the correct element</div>
+<div class="questionText hide">Match the keyframe(s) with the correct animation</div>
+  <div class="question present">
+  	<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+    <p>#Box {transform: rotate(45deg) scale(0.9);}</p></code></pre>
+    <div class="column none"></div>
+  </div>
+  <div class="question future">
+  	<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+    <p>#Box {transform: rotate(25deg) skewY(15deg);}</p></code></pre>
+    <div class="column none"></div>
+  </div>
+  <div class="question future">
+  	<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+    <p>#Box {transform: skew(15deg, 15deg);}</p></code></pre>
+    <div class="column none"></div>
+  </div>
+  <div class="question future">
+  	<pre class="prettyprint lang-css"><code data-trim style="font-size: 15px;">
+    <p style="margin-top: 20px;">40% {transform: translate(100px,100px);}</p>
+    <p style="margin-top: -40px;margin-left: -20px;">60% {transform: translate(100px,100px) rotate(90deg);}</p></code></pre>
+    <div class="column none"></div>
+  </div>
+  <div class="question future">
+  	<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+    <p style="">50% {opacity: 0;}</p></code></pre>
+    <div class="column none"></div>
+  </div>
+  <div class="question future"></div>
+  <div id=progdiv>1 of 5</div>
+</div>
+
+
+
+
+
+<!--div id="DivVA">
+  <label for="tb" id="lbl" style="color:#000;"><p id="va"><span>&nbsp;</span></p></label>
+  <input type="text" name="tb" id="tb" align="middle"/>
+  <input type="submit" name="btn" id="btn" value="Submit" onclick="Process()"/>
+ </div-->
+ 
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+
+</div>
+</body>
+</html>

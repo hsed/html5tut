@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section>
+<div id="DivContent">
+<h6>CSS3 Animations</h6>
+  <h2>Introduction to CSS3 Animations</h2>
+  <div style="position: absolute; margin-left: -5px; margin-top: 10px; -webkit-perspective: 1000;"><img src="../../img/style/CSS3.svg" width="150" height="150" title="CSS3 Logo" style="border: none; box-shadow: none; background: none; -webkit-animation: whirlIn 4s 0s ease infinite alternate;"/></div>
+  <div style="position: absolute; margin-left: 130px;"><p>CSS3 animations allow up to infinite iterations of animation sequence(s) for an HTML element. They are very similar and a direct competitor to motion and shape tweens created in Adobe&reg; Flash. CSS3 animations also use key-frames to accomplish this similar to Adobe&reg; Flash. The only major difference is that while Adobe&reg; use timeline controls, CSS3 animations are coded in CSS scripting language making it slight tedious to create and debug working animations. CSS3 animations are the biggest edition to CSS along with transformations.</p>
+</div>
+  <h2><br /></h2>
+  <h2><br /></h2>
+  <h2><br /></h2> 
+  <h2><br /></h2>  
+  <p>An example of CSS3 animation can be seen on the top-left of this slide. The logo spins and scales alternatively, i.e. it first spins clockwise while zooming-in and then anticlockwise while zooming-out. An infinite option allows the animation to be played indefinitely.</p>
+   
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Animations</h6>
+  <h2>Create CSS3 Animations: Define Properties [1/2]</h2>
+<p>There are two major steps involved in creating  a working animation. The first step is to <strong>define</strong> the animation property and its  <strong>configuration values</strong> in the code block of the element required to be animated.  The next step is to define the animation in special key-frame blocks that run  from 0% to 100% corresponding to the start and end of the animation. The code block on the next slide displays all of the essential and optional properties necessary to  define a CSS3 animation.</p> 
+<br />
+<p>Note: Important properties are commented with an &lsquo;IMP&rsquo;. You will notice the use of the &lsquo;-webkit-&rsquo; prefix. This is required because Google® Chrome currently  doesn&rsquo;t support unprefixed animations. Furthermore, you will also be shown an alternative form of defining CSS3 animations which is commonly known as  &lsquo;shorthand code&rsquo;.</p>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Animations</h6>
+  <h2>Create CSS3 Animations: Define Properties [2/2]</h2>
+  <p>The animation properties are as follows:</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>-webkit-animation-name:&nbsp;pulse;  /*IMP; name of the key-frame code block*/<br>
+-webkit-animation-duration:&nbsp;2s;  /*IMP*/<br>
+-webkit-animation-timing-function:&nbsp;linear; /*IMP*/<br>
+-webkit-animation-delay:&nbsp;1s;<br>
+-webkit-animation-iteration-count:&nbsp;5; /*number of times to play the animation*/<br>
+-webkit-animation-direction:&nbsp;alternate;  /*which direction i.e. normal or alternate*/<br>
+-webkit-animation-fill-mode:&nbsp;forwards;<br>  
+/*keeps the element in the same state as the last key-frame,<br><br> if not specified, the element reverts back to its original design after animation end*/<br>
+-webkit-animation-play-state:&nbsp;running;  /*is the animation running or paused?*/</p>
+<p>/*...............................................*/</p>
+<p>/*<strong>alternate one line shorthand version</strong> of all of the above code just like the transition property*/<br>
+-webkit-animation:&nbsp;pulse 2s linear 1s 5 alternate forwards running;
+</p>
+</code></pre>
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Animations</h6>
+  <h2>Create CSS3 Animations: Define  Key-frames</h2>
+<p>The next step to complete the animation  definition is to define the <strong>key-frames</strong>. We use the @-webkit-keyframe selector  to define a key frame and the curly brackets structure &lsquo;{}&rsquo; just as normal CSS  definitions. Inside the key-frame declaration we declare each <strong>position</strong> on the  <strong>timeline</strong>. Starting from <strong>0%</strong> and ending at <strong>100%</strong>. Any intermediate value can be  used and there is no requirement to specify all percentages but they must be in  <strong>order</strong> and only <strong>used once</strong> in a single key-frame declaration. For each key-frame  percentage another {} code block is created. Within this sub-block the user can  define as many styles as s/he wishes to alter. It is essential that only those  properties that can be animated such as transformations, opacity, colours, etc are used.  An example of a pulse effect is shown below:</p>
+<br />
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>@-webkit-keyframes pulse {<br>
+  0% { transform: scale(1); background: #CFC; }<br>
+  50% { transform: scale(1.5); }<br>
+  100% { transform: scale(1); background: #CCF; }<br>
+  }</p>
+</code></pre>
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+  <h2>Some Examples</h2>
+<p>Some examples of CSS3 animations are shown below. To get the CSS source code 
+<a href="../rsrc/css3/etc/anim-styles.css" onClick="nothing();" target="_blank"><strong>click here</strong></a> and the CSS source file will open in a new tab.</p>
+ <h2><br /></h2>
+ <div class="tutbox anim1">Pulse</div>
+ <div class="tutbox anim2">Spin</div>
+ <div class="tutbox anim3">Blink</div>
+ <div class="tutbox anim4">Shear Slide-In</div>
+</div>
+</section>
+
+
+
+
+<section class="end-slide">
+       	<section>
+        	<h2>End of CSS3 Animations</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+    </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+</section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 13, "sect":"css3", "url":"anim", "newurl":"other"}</var>
+</body>
+</html>

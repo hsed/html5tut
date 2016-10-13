@@ -1,0 +1,146 @@
+div.imgbox img {
+	/* Inherit the width and height from the parent element */
+	width: inherit;
+	height: inherit;
+	transition: transform 0.35s;
+}
+
+.reveal div.imgbox { padding: 5px;}
+
+div.imgbox {
+	width: 250px;
+	height: 187.5px;
+	left: 7px;
+	top: 210px;
+	/*margin: 0 20px 0 0;*/
+	margin: 0 0 0 0;
+	padding: 10px;
+	/* Box shadow */
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	background: #fff;
+	border-radius: 5px;
+	/* Position absolutely so we can zoom it out later */
+	position: absolute;
+	font-family: Arial, sans-serif;
+	-webkit-transition: width ease-in 0.5s;
+	-webkit-transition-property: width, height, box-shadow, left, top, margin;
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-duration: 0.5s;
+	/*-moz-transition: all ease-in 0.5s;
+	-ms-transition: all ease-in 0.5s;*/
+	overflow: hidden;
+	cursor: pointer;
+}
+
+div.imgbox.middle { /*Middle Bottom Style for images*/
+	top: 60%; 
+	left: 40%;	
+}
+
+div.imgbox.center { /*Center Style for images*/
+	top: 35%; 
+	left: 40%;	
+}
+
+div.imgbox.topleft { /*Top Left Style for images*/
+	top: 18%; 
+	left: 2%;	
+}
+
+div.imgbox.bottomright { /*Left Bottom Style for images*/
+	top: 60%;  
+	left: 70%;	
+}
+
+div.imgbox .details
+{
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	 background: #f39c12; /*alt (darker): #d35400*/
+	cursor: pointer;
+	border-radius: 0 0 4px 4px;
+	text-transform: none;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(0,80px,0);
+}
+
+div.imgbox:hover
+{
+	box-shadow:  0px 0px 15px 2px rgba(0, 0, 0, 0.6);
+}
+
+div.imgbox:hover img {
+	transform: translate3d(0,-40px,0);
+}
+
+div.imgbox:hover .details
+{
+	opacity: 1;
+	cursor: default;
+	transform: translate3d(0,0,0);
+}
+
+.reveal div.imgbox h5
+{
+	display: table;
+	margin: 10px auto 10px auto;
+	color: #FFF;
+	padding: 0;
+	font-size: large;
+}
+
+
+#FadeDiv {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background-color: rgba(0,0,0,0.9);
+	display: block;
+	opacity: 0;
+	transition: all 0.5s 0s linear;	
+	
+}
+
+
+
+/*Zoomed-in CSS*/
+div.imgbox.zoom {
+	z-index: 101;
+	cursor: default;
+	top: 50%;
+	left: 50%;
+	border-radius: 0px;
+}
+
+div.imgbox.zoom .details {
+	border-radius: 0px;
+	cursor: default;	
+}
+
+div.imgbox.zoom span {display: block;}
+
+
+#FadeDiv.fade  {
+	z-index: 99;
+	opacity: 1;
+	-webkit-user-select: none;
+}
+
+
+#FadeDiv.fade ~ .slides {
+	z-index: 100;	
+	/*zoom: 1 !important;*/
+}
+
+#FadeDiv.fade ~ .slides #DivContent {
+	background: none;	
+}
+
+.main-header.fade, .main-header.fade ~ .logo-container { -webkit-animation: fadeOut 0.5s ease-out 1 forwards;}

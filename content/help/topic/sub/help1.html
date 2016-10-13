@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../../../css/framestyles.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/imgstyle.css"/>
+<script type="text/javascript" src="../../../../js/helper.js"></script>
+<style type="text/css">
+#img1 {
+	position: absolute;
+	left: 630px;
+	top: 30px;
+	width: 170px;
+	height: 100px;
+}
+#img2 {
+	position: absolute;
+	left: 630px;
+	top: 170px;
+	width: 170px;
+	height: 100px;
+}
+#img3 {
+	position: absolute;
+	left: 630px;
+	top: 310px;
+	width: 170px;
+	height: 100px;
+}
+#apDiv1 {
+	position: absolute;
+	left: 7px;
+	top: 71px;
+	width: 607px;
+	height: 383px;
+	z-index: 1;
+}
+</style>
+<title></title>
+</head>
+
+<body>
+
+<div id="DivMain" style="width: 840px; height: 480px;">
+<div id="FadeDiv"></div>
+  <h1>Tutorial</h1>
+  <p style="margin-top: -5px;">This page briefly describes the funtions of various controls and elements used on the website.</p>
+  <div class="imgbox" id="img1">
+	  <span class="close" title="Close" onclick="ResetPic(0);"><a href="#">X</a></span>
+	  <img src="../../../../img/help/help1.jpg" title="Annotation of Homepage Controls" onclick="ZoomPic(0)">
+      <div class="details" onclick="ZoomPic(0)">
+		<h5>Click to zoom</h5>
+	  </div>
+  </div>
+  <div class="imgbox" id="img2">
+	  <span class="close" title="Close" onclick="ResetPic(1)"><a href="#">X</a></span>
+     <img src="../../../../img/help/help2.jpg" title="Annotation of Topic Page Controls" onclick="ZoomPic(1)"/> 
+     <div class="details" onclick="ZoomPic(1)">
+		<h5>Click to zoom</h5>
+	  </div>
+  </div>
+  <div class="imgbox" id="img3">
+	  <span class="close" title="Close" onclick="ResetPic(2)"><a href="#">X</a></span>
+     <img src="../../../../img/help/help3.jpg" title="Annotation of Video Controls" onclick="ZoomPic(2)"/> 
+     <div class="details" onclick="ZoomPic(2)">
+		<h5>Click to zoom</h5>
+	  </div>
+  </div>
+  <div id="apDiv1">
+    <p>The first picture (on the right) starting from the top illustrates the various components found on the homepage. To zoom-in an image, simply click anywhere on the image except for the description bar which reads 'Click to zoom'. Once zoomed in the description bar will contain description of the image being displayed. To close an image after viewing it, simply hover over the top-right corner of the image and a 'X' button will appear which can be clicked to close the image.</p>
+    <p>The second picture illustrates the common controls found on most of the pages of the EBook. The top menu bar is the default method of navigation thorughout the website. It can be used to select individual 'topics'. A topic will typically consist of 4 'sub-topics' including a summary. To goto the next sub-topic, simply click on the required sub-topic name from the side bar which is docked  on the left of each topic page (not visible in this page). Finally to move forth and back between pages of the same sub-topic simply use the 'Next' and 'Prev' buttons respectively. Alternatively, the keyboard arrow keys can also be used for navigation. </p>
+    <p>The last picture shows the controls for a video embed in the EBook. These controls may vary depending upon the broswer. To learn how to play 'JPong' use the in-game help function. Finally, to learn about the aspects and purpose of these elements and to know more about them in depth, view the Evaluation PDF which is located in 'More &gt; Evaluation'. To return to what you were reading previously (except homepage), click the '&larr; Go Back' button.</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

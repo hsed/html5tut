@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato/Lato-Regular.ttf') format('truetype'); /*Regular is also ok*/
+}
+@font-face {
+    font-family: "News Cycle";
+    src: url('../font/News_Cycle/NewsCycle-Regular.ttf') format('truetype'); /*Regular is also ok*/
+}
+
+.maindiv {
+	position: absolute;
+	overflow: hidden;
+	/*top: 180px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	height: 250px;*/
+	
+	top: 30%;
+	left: 0;
+	/* margin-left: -200px; */
+	width: 100%;
+	height: 100%;
+	
+}
+
+.maindiv.css {
+	position: absolute;
+	overflow: hidden;
+	top: 20%;
+	left: 0;
+	/* margin-left: -200px; */
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: -1;
+}
+
+.answers {
+	position: absolute;
+	margin: auto;
+	width: 300px;
+	margin-left: -125px;
+	left: 50%;
+}
+
+.answers ol {
+	margin-left: -20px;	
+}
+
+.question {
+	position: absolute;
+	top: 0px;
+	margin: auto;
+	width: 400px;
+	
+	
+	margin-left: -200px;
+	left: 50%;
+	
+}
+
+.question.farpast,.question.farfuture {display: none;}
+
+.question.past {
+	display: block;
+	transition: transform 1.5s ease-out;
+	transform: translate(-300%, 0);
+}
+
+.question.present {
+	display: block;
+	transition: transform 1.5s ease;
+	transform: translate(0, 0);
+}
+
+.question.future {
+	display: block;
+	transform: translate(300%, 0);
+}
+
+#progdiv { /*Shows Progress i.e. x out of max*/
+	position: fixed;
+	bottom: 15px;
+	float: right;
+	right: 15px;
+	color: #222;
+	font-size: 3em;
+}
+#finishbtn { /*Shows Progress i.e. x out of max*/
+	position: fixed;
+	bottom: 15px;
+	float: right;
+	right: 15px;
+	color: #222;
+	font-size: 1.5em;
+	display: none;
+}
+
+.questionText {
+	font-size: 28px;
+	color: #222;
+	margin-left: 2px;
+	font-family: "News Cycle", sans-serif;
+	text-align: center;
+}
+
+.option:not(x)	{
+	width: 300px;
+	height: 35px;
+	margin: 15px;
+	margin-left: 50px;
+	font-size: 18px;
+	color: #FFF; 
+	padding: 1px;
+	padding-left: 10px;
+	border: 2px solid #281 /*#dd3 #51661E*/;
+	cursor: pointer;
+	background-color: #019424;
+	transition: transform ease 0.2s, background linear 0.5s, border linear 0.5s ;
+	-webkit-user-select: none;
+}
+
+.option:not(x):hover {
+	border: #FC0 solid 2px;
+	/*border: #FC0 solid 2px;
+	color: #FC0;*/ /*#141D17;*/
+	background: #022507;
+	transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#columns {
+	position: absolute;
+	top: 100px;
+	width: 150px;	
+	float: right;
+	right: -25px;
+	z-index: 10;
+}
+#columns.wide {
+	position: absolute;
+	top: 320px;
+	width: auto;	
+	float: right;
+	right: 250px;
+	z-index: 10;
+}
+.column {	
+  height: 100px;
+  width: 100px;
+  float: left;
+  border: 1px solid #666666;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 3px #000;
+  text-align: center;
+  cursor: move;
+  cursor: -webkit-grab;
+  display: block;
+  transition: transform 0.2s ease-out;
+}
+
+.column.hide, .questionText.hide { display: none; }
+.column.none {  background: #FFF; }
+.column.none:after { content: 'Drop image here'; }
+.column.a {	background: url(../img/quiz/q1.gif) no-repeat center center; -webkit-background-size: cover;}
+.column.b {	background: url(../img/quiz/q2.gif) no-repeat center center;	-webkit-background-size: cover;}
+.column.c {	background: url(../img/quiz/q3.gif) no-repeat center center;	-webkit-background-size: cover;}
+.column.d {	background: url(../img/quiz/q4.gif) no-repeat center center;	-webkit-background-size: cover; }
+.column.e {	background: url(../img/quiz/q5.gif) no-repeat center center;	-webkit-background-size: cover; }
+
+.column:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+.column.over {
+  border: 2px dashed #000;
+}
+.question .column {
+   margin-left: calc(50% - 50px);
+   cursor: default	
+}
+.column.moving {
+	opacity: 0.25;
+	transform: scale(0.8);
+}
+
+
+.wide .column.a:after { content: '1'; color: #222; text-align: center; vertical-align: middle; line-height: 100px; font-size: 2em; }
+.wide .column.b:after { content: '2'; color: #222; text-align: center; vertical-align: middle; line-height: 100px; font-size: 2em; }
+.wide .column.c:after { content: '3'; color: #222; text-align: center; vertical-align: middle; line-height: 100px; font-size: 2em; }
+.wide .column.d:after { content: '4'; color: #222; text-align: center; vertical-align: middle; line-height: 100px; font-size: 2em; }
+.wide .column.e:after { content: '5'; color: #222; text-align: center; vertical-align: middle; line-height: 100px; font-size: 2em; }

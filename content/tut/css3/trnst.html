@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+  <h2>What are CSS3 Transitions?</h2>
+  <div id="trans1">Circle</div>
+  <div style="position: absolute; margin-left: 130px;"><p>Transitions are one of the major additions to the latest version of CSS. Transitions are a set of animations that can be applied on HTML5 elements whenever one of their states is changed. Each element has few defined states that are linked to the interaction of the elements by the user. Live examples of most of the states are demonstrated below. A detailed explanation is followed on the next slide. </p>
+</div>
+  <h2><br /></h2>
+  <h2><br /></h2>
+  <h2><br /></h2> 
+  <h2><br /></h2>  
+  <p>Hover over the green circle on the top-left of this slide to see a live example of a transition.</p>
+</div>
+</section>
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>CSS3 Transitions</h6>
+  <section id="fragments" style="top: 146px; display: block;" class="present">
+  <h2>CSS States</h2>
+  <br/>
+  <h3 align="left">The most common states found in CSS3 are:</h3>
+  <ul>
+    <li class="fragment roll-in visible" data-fragment-index="1">	Link – This state is used to describe the appearance of a certain element whenever the property ‘href’ is used within its tag. The common use of links is with the &lt;a&gt; tag for linking to other webpages or parts of the document. The visited state is used in connection with the link state to define the style of a link once it has been navigated to. </li>
+    <li class="fragment roll-in visible" data-fragment-index="2">	Hover – This state is activated whenever a user hovers over the mouse pointer on the chosen element or elements. It is often used to create interactive content (roll-overs) and pull-down menus.</li>
+    <li class="fragment roll-in visible" data-fragment-index="3">	Active – This state is activated while a user is clicking on an element. It can be used to give a push button feel such as the submit button of the Virtual Assistant found on the homepage.</li>
+    <li class="fragment roll-in visible" data-fragment-index="4">	Focus – This state is frequently used for text boxes and other selectable elements. It is used to define the style of an element when it is currently selected and accepting input/interaction.</li>
+    <br />
+    <p class="fragment roll-in visible" data-fragment-index="5" style="text-align: center; font-style:italic;">---End of slide---</p>
+  </ul>
+  </section>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+  <h2>How to define a CSS State</h2>
+<p>Defining a state is very simple. It uses the same principal as  defining a standard CSS declaration. The only difference is that, after the selector,  the colon &lsquo;:&rsquo;  is used. This is then succeeded by the required state. The  first code block in the example below defines a standard &lt;div&gt; element  with the id property as &lsquo;box&rsquo;. The second code block defines what will happen  when a user hovers over the element. The result can be shown below, hover over  to see the effect!</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#box { position: absolute; top: 50%; left: 50%; width: 60px; height: 60px; background: lightgreen } <br>
+#box:hover { width: 120px; height: 120px; } </p>
+</code></pre>
+<div id="box1">Box</div>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+  <h2>The Problem</h2>
+<p>The example on the previous slide poses a problem. As you  have noticed the transition from a smaller box to a larger one is jerky and  unanimated. It happens almost instantaneously. This is where CSS3 comes into  place to fix problems and allow developers to design beautiful and eye-catchy  websites. In order to place a smooth animation between the two CSS states the  transition property is used. An image below breaks down the various part of the  transition property. This is the shorthand version where multiple values are  defines separated by spaces in order to reduce file-size and save time. </p>
+<br />
+<p>Add the code below to the <strong>default</strong> state of #box and hover over the element to see the animation effect. The  original example has also been updated below. An image on the bottom right explains the transition property syntax.</p>
+<pre class="prettyprint lang-css" style="width: 60%; left: -18%;"><code data-trim style="font-size: 18px;">
+<p>#box { transition: all 1s 0.1s ease; }</p>
+</code></pre>
+  <div style="position: absolute; margin-left: 20px; left: 70%; top: 60%; "><img src="../../img/tut/css3/2.gif" width="267" height="168" title="CSS3 Logo" style="border: none; box-shadow: 0px 0px 10px rgba(0,0,0,0.3);"/></div>
+ <h2><br /></h2>
+ <div id="box1" class="trans">Box</div>
+</div>
+</section>
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>CSS3 Transitions</h6>
+  <section id="fragments" style="top: 146px; display: block;" class="present">
+  <h2>CSS States</h2>
+  <br/>
+  <h3 align="left">Transition Syntax Explained:</h3>
+  <ul>
+    <li class="fragment roll-in visible" data-fragment-index="1">Property – Which property should the transition be applied to. This is useful if you don’t want to animate certain features of an element.</li>
+    <li class="fragment roll-in visible" data-fragment-index="2">Duration – How long should an animation run. This can be defined in seconds (s) or milliseconds (ms). The value must be a positive number.</li>
+    <li class="fragment roll-in visible" data-fragment-index="3">Delay – This part defines how long to wait before performing the transition. It is used for more subtle effects or to prevent unnecessary transitions. This can be defined in seconds (s) or milliseconds (ms). The value must be a positive number.</li>
+    <li class="fragment roll-in visible" data-fragment-index="4">Timing-function – This controls the speed of the transition from start to finish. The most common ones are: linear, ease, ease-in and ease-out. Linear for example has a constant speed throughout.</li>
+    <br />
+    <p class="fragment roll-in visible" data-fragment-index="5" style="text-align: center; font-style:italic;">---End of slide---</p>
+  </ul>
+  </section>
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+  <h2>Some More Examples</h2>
+<p>Hover over the shapes to see the effects in action. Each shape contains the description of its transition property.</p>
+ <h2><br /></h2>
+ <div class="tutbox move">Position, Ease, 2s &amp; No Delay</div>
+ <div class="tutbox bkg">Background, Linear, 2s &amp; No Delay</div>
+ <div class="tutbox fade">Opacity, Ease-Out, 2s &amp; No Delay</div>
+ <div class="tutbox rot">Transformation (Next Topic), Linear, 1s &amp; 0.1s Delay</div>
+</div>
+</section>
+
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>CSS3 Transitions</h6>
+	<section id="fragments" style="top: 146px; display: block;" class="present">
+ 	<h2>Task #1</h2>
+ 	<p>Here is your first task of the CSS3  section. In this task you will be designing some basic animated buttons for use  on your website. It is <strong>vital</strong> that  you perform all tasks on a separate style sheet and not as inline-styles. You can use your previous HTML file as long as you delete all in-line styles first. You  need to:</p>
+<ol>
+  <li class="fragment roll-in visible" data-fragment-index="1">Create a blank  CSS file. Link the CSS file to the HTML file from the last task of the previous section.</li>
+  <li class="fragment roll-in visible" data-fragment-index="2">Set the background property of  the body to black.</li>
+  <li  class="fragment roll-in visible" data-fragment-index="3">Create a &lt;div&gt; elements  and give it a &lsquo;class&rsquo; name.</li>
+  <li class="fragment roll-in visible" data-fragment-index="4">Using the help of previous videos and examples use the div element to create a rectangle of length 20px and height 5px (hint: use the class selector for tasks 4-6).</li>
+  <li class="fragment roll-in visible" data-fragment-index="5">Add  a <strong>linear</strong> <strong>transition</strong> property to <strong>background</strong> with <strong>0.3s delay</strong>.&rsquo;</li>
+  <li class="fragment roll-in visible" data-fragment-index="6">Change  the background property of the div to green and set it to red on hover.</li>
+<br />
+    <p class="fragment roll-in visible" data-fragment-index="7" style="text-align: center; font-style:italic;">---End of slide---</p>
+</ol>
+	</section>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transitions</h6>
+ <h2>Task #1 – Results</h2>
+ <p>If you were able to successfully accomplish this task your  webpage should look like this:</p>
+ <br />
+ 		<div class="imgbox middle" id="img">
+    		<img src="../../img/tut/css3/3.gif" title="Task 1 Preview">
+    		<div class="details">
+				<h5>Click to zoom</h5>
+    		</div>
+  		</div>
+ <p>If not, then you are strongly advised to revisit the last tutorial  and/or consult a teacher.</p>
+</div>
+</section>
+
+<section class="end-slide">
+       	<section>
+        	<h2>End of HTML5 Introduction</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+        </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+       </section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 13, "sect":"css3", "url":"trnst", "newurl":"trnsf"}</var>
+</body>
+</html>

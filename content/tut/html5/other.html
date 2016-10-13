@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section data-transition="fade" style="font-size: 22px; text-align: center;">
+					<h2 style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Other</h2>
+					<p style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">In this section you will be familiarised by some other HTML  features that are used to enhance a user&rsquo;s experience when visiting a webpage.  This section will only be limited to the HTML portion of a webpage.</p>
+</section>
+<section>
+<div id="DivContent">
+<h6>Other</h6>
+<h2>Title</h2>
+<p>A Title simply put is the user-friendly name of the webpage  which is displayed on the front-end to the users. Most modern browsers display  the title name on each individual tab opened in a browser. This way users can  know which tab contains what. &lt;&lt;ADD PIC SHOWING TITLE? Or 2 in 1  later?&gt;&gt;<br>
+  The syntax of the Title tag needs no explanation except for  an <strong>important </strong>note that it must be  added in the <strong>head</strong> tag. Basically, a  pair of &lsquo;title&rsquo; tags is required and then just like the P or H1 tag, text is  added within the tags.</p>
+<pre class="prettyprint"><code data-trim style="font-size: 18px;">
+<p>&lt;title&gt;HTML5 Tutorials&lt;/title&gt;</p>
+</code></pre></div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>Other</h6>
+<h2>Favicon</h2>
+<p>A favicon is a small graphics icon that acts as a logo of the  website being currently accessed. In simple terms the icon is of *.ico or *.png  format and generally very small sized e.g. 16x16 pixels. This icon is then  displayed on the browser tab next to the webpage&rsquo;s title. This can be used to  identify easily which tab contains the opened website as then the user is not  required to manually read the titles of all webpages.<br>
+  &lt;&lt;SCRSHOT OF LOC. OF FAVICO IN A BROWSER&gt;&gt;<br>
+  The syntax is just one-line but it is very <strong>important </strong>to remember that the favicon  can only be added in the <strong>head</strong> tag of  a page and commonly placed right below the title tag.</p>
+<pre class="prettyprint"><code data-trim style="font-size: 18px;">
+&lt;link  rel=&quot;shortcut icon&quot; type=&quot;image/png&quot;  href=&quot;../../img/style/favico.png&quot;&gt;<br>
+</code></pre>
+</div>
+</section>
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Other</h6>
+  <section id="fragments" style="top: 146px; display: block;" class="present">
+  <h2>Syntax  of Favicon Explained</h2>
+  <br/>
+  <ul>
+    <li class="fragment visible" data-fragment-index="1"><strong>Link</strong> – The name of the tag. This basically is used whenever some information is  needed to be applied or integrated to a webpage from an external source. A  common usage of a link tag is to apply styles using external stylesheets.</li>
+    <li class="fragment visible" data-fragment-index="2"><strong>Rel</strong> – Defines the category of content is being linked. The &lsquo;shortcut icon&rsquo; tells  the browser to display the relevant image provided in the favico area as well  as when pinning the webpage to desktop and/or the taskbar.</li>
+    <li class="fragment visible" data-fragment-index="3"><strong>Type</strong> – The format of data being supplied. It is always important to double check the  format of the original file and the type value is the same by looking at the  end of the filename after the (last) period.</li>
+    <li class="fragment visible" data-fragment-index="4"><strong>Href</strong> – The actual absolute or relative link of the file. This can also from the web  if accessible.</li>
+  </ul>
+  </section>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>Other</h6>
+<h2>Tooltips</h2>
+<p>Tooltips is used to display more or underlying information  when a user hovers over an object. Simple tooltips don&rsquo;t require any javascript  knowledge and can be added to any element. You may have noticed use of tooltips  when you hover over some top menu bar items. &lt;&lt;ADD IMG OF TOOLTIP&gt;&gt;<br>
+  The tooltip can be added by including the &lsquo;title&rsquo; <strong>property </strong>(not tag!) of an element<br>
+  Syntax: </p>
+<pre class="prettyprint"><code data-trim style="font-size: 18px;"><p>&lt;a href=&quot;#basic&quot; title=&quot;Basics of  HTML&quot; target=&ldquo;_blank&rdquo;&gt;Basics&lt;/a&gt;</p></code></pre><br><p>
+  Hover over the hyperlink below to see the title in action:<br>
+  <a href="#basic" title="Basics of HTML">Basics</a></p>
+</div>
+</section>
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>Introduction to HTML5</h6>
+	<section id="fragments" style="top: 146px; display: block;" class="present">
+ 	<h2>Task #2</h2>
+ 	<p>Now it&rsquo;s time for your second task of this section. In this  task you will:</p>
+ 	<ol>
+   		<li class="fragment visible" data-fragment-index="1">Create  an HTML document titled &lsquo;My Ebook&rsquo;.</li>
+   		<li class="fragment visible" data-fragment-index="2">Click <strong>here</strong> (U/C) to download a sample  favicon. Link this to your webpage.</li>
+   		<li class="fragment visible" data-fragment-index="3">Make  the background of the body grey (#CCC).</li>
+    <li class="fragment visible" data-fragment-index="4">Add  the text as follows: &lsquo;Hello World!&rsquo; [H1], &lsquo;Welcome to my website&rsquo; [H2] and  &lsquo;Click here to learn more.&rsquo;</li>
+    <li class="fragment visible" data-fragment-index="5">Use the Font-Size property to set H1 at 30px, H2 at 20px and P at 15px.</li>
+    <li class="fragment visible" data-fragment-index="6">Use the Text-Decoration property to make the H2 property underlined.</li>
+   <li class="fragment visible" data-fragment-index="7">Enclose  the text &lsquo;here&rsquo; with a hyperlink which shows a tooltip displaying &lsquo;Opens in new  window&rsquo; when hovered over.</li>
+   <li class="fragment visible" data-fragment-index="8">Use the URL 'help.html' as a reference to the hyperlink and '_blank' for its target property.</li>       
+ 	</ol>
+	</section>
+</div>
+</section>
+
+
+<section>
+<div id="DivContent">
+<h6>Other</h6>
+<h2>Task #2 – Results</h2>
+<p>If you were able to successfully accomplish this task your  webpage should look like this:</p>
+<br />
+  <div class="imgbox center" id="img">
+    		<img src="../../img/tut/html5/8.gif" title="Task 2 Preview">
+    		<div class="details">
+				<h5>Click to zoom</h5>
+    		</div>
+  		</div>
+ <h2><br /></h2>
+ <h2><br /></h2>
+ <h2><br /></h2>
+ <h2><br /></h2>
+ <h2><br /></h2>
+ <p>If not, then you are strongly advised to revisit the last  tutorial(s) and/or consult a teacher.</p>
+</div>
+</section>
+<section class="end-slide">
+       	<section>
+        	<h2>End of HTML5 Basics</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+        </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+</section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 9, "sect":"html5", "url":"other", "newurl":""}</var>
+</body>
+</html>

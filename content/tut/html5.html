@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>Section 1 - HTML5</title>
+<link rel="shortcut icon" type="image/png" href="../../img/style/html5.png">
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/imgstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/assist.css">
+<link rel="stylesheet" type="text/css" href="../../css/logo.css">
+<link rel="stylesheet" href="../../css/reveal.css">
+<link rel="stylesheet" href="../../css/theme.css" id="theme">
+<link rel="stylesheet" type="text/css" href="../../css/selectify.css" />
+</head>
+
+<body class="menu-active">
+<SCRIPT src="../../js/anim.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/timesub.js" type="text/javascript"></SCRIPT>
+<script src="../../js/notify.js" type="text/javascript"></script>
+<script src="../../js/prettify.js" type="text/javascript" defer></script>
+
+
+<nav class="main-nav" id="main-nav">
+<h2>Sidebar</h2>
+<div class="side-list">
+  <a href="../../index.html" onMouseOver="if (localStorage.mute == false) select.play()">Home</a>
+  <a href="html5.html" onMouseOver="if (localStorage.mute == false) select.play()">HTML5</a>
+  <a href="css3.html" onMouseOver="if (localStorage.mute == false) select.play()">CSS3</a>
+  <a href="../rsrc/rsrc.html" onMouseOver="if (localStorage.mute == false) select.play()">Resources</a>
+  <a href="../quiz/quiz.html" onMouseOver="if (localStorage.mute == false) select.play()">Quiz</a>
+  <a href="#" onMouseOver="if (localStorage.mute == false) select.play()" onClick="alert('Coming Soon!');">Help</a>
+  <a href="#" class="md-trigger" onMouseOver="if (localStorage.mute == false) select.play()">Settings</a>
+ </div>
+</nav>
+
+<div class="page-wrap bkg1" id="page-wrap">
+
+<header class="main-header" id="main-header">
+    <a id="nav-toggle" href="#" class=""><span></span></a>
+    <p id="HTML5" class="HeadingTxt" style="left: 10%; top: 1px;">HTML5<span>&nbsp;</span></p>
+    <div id="DivTime"><img src="../../img/style/loading.gif" hspace="20" vspace="15"></img></div>
+    <div id="DivMenu" style="left: 18%; margin-left: 0;">
+<ul id="menu" onMouseOver="if (localStorage.mute == false) select.play()">
+	<li><a href="#basic" title="Basics of HTML">Basics</a></li>
+	<li><a href="#intro" title="Introduction to HTML5">Intro</a></li>
+	<li><a href="#mmedia">Multimedia<span id="DwnArw"></span></a>
+        <ul>
+            <li><a href="#mmedia1">Video</a></li>
+			<li><a href="#mmedia5">Audio</a></li>
+		</ul>		
+    </li>
+	<li><a href="#other">Other<span id="DwnArw"></span></a>
+        <ul>
+            <li><a href="#other1">Title</a></li>
+			<li><a href="#other2">Favico</a></li>
+            <li><a href="#other4">Tooltips</a></li>
+		</ul>		
+    </li>		
+</ul>
+</div>
+</header>
+
+
+
+<div class="logo-container" onClick="window.location='../../index.html';">
+	<div class="flipper"><div class="frontlogo"></div><div class="backlogo"></div></div>
+</div>
+
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+<audio id="notsnd">
+	<source src="../../mp3/notify.mp3" />
+</audio>
+
+
+<div class="reveal" id="reveal">
+			<div class="slides" style="font-size: 28px; text-align: cente;">
+				<section data-transition="zoom" style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">
+					<h2 style="text-shadow: 0px 0px 10px #FFF, 0px 0px 30px #0F0;">Welcome</h2>
+					<p>Welcome to HTML5 Tutorials. This product is designed to aid you in creating rich, powerful and elegant multimedia websites for your ICT coursework.</p>
+                    <br /> 
+<p>Use the top menu-bar to navigate to a topic. To learn more about how to use the product see help in the side menu-bar.</p>
+<p>Press the right arrow key &quot;&rarr;&quot; on your keyboard to continue.</p>
+                     <br />
+				</section>
+    <section id="end-slide"></section>
+	</div>
+    <var id="tutinfo" style="display: none;">{"newlvl": 3, "sect":"html5", "url":"", "newurl":"basic"}</var>
+</div>
+
+<button class="font-toggle" title="Return to normal view" onClick="localStorage.lfont = false; document.webkitExitFullscreen(); window.location.reload();">&#65513;<span>Return</span></button>
+</div>
+
+
+<div class="md-settings md-effect-13" id="modal-13">
+			<div class="md-content">
+				<h3>Settings</h3>
+				<div id="md-left-panel">
+					<ul>
+						<li>Name: <input type="text" name="nametb" id="nametb" placeholder="Please enter your name"/></li>
+                        <li>Theme: 
+                        <div class="cs-select cs-skin-circular" tabindex="0">
+            			<span class="cs-placeholder" style="background-image: url(../../img/style/th1.gif)">1</span>
+            			<div class="cs-options">
+            			<ul class="cs-ul">
+            				<li data-option="1" data-value="1" class="cs-li"><span>1</span></li>
+                			<li data-option="2" data-value="2" class="cs-li"><span>2</span></li>
+                			<li data-option="3" data-value="3" class="cs-li"><span>3</span></li>
+                			<li data-option="4" data-value="4" class="cs-li"><span>4</span></li>
+                			<li data-option="5" data-value="5" class="cs-li"><span>5</span></li>
+                			<li data-option="6" data-value="6" class="cs-li"><span>6</span></li>
+                			<li data-option="7" data-value="7" class="cs-li"><span>7</span></li>
+                			<li data-option="8" data-value="8" class="cs-li"><span>8</span></li>
+               			</ul>
+            			</div>
+            			</div>
+                        </li>
+                        <li>Transparency: 
+                        <input type="range" min="0" max="100" step="1" value="20" id="opacitysld"/>
+                        </li>
+                    </ul>
+                </div>
+                <div id="md-right-panel">
+                    <ul>
+                        <li style="margin-top: -10px;">Large Font: <div class="switch" style="margin-left: 7px;">
+  						<input id="fonttgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="fonttgl"></label>
+						</div></li>
+						<li style="margin-top: -10px;">Mute Audio: <div class="switch">
+  						<input id="mutetgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="mutetgl"></label>
+						</div></li>
+                        <li style="margin-top: -10px;">Animation: <div class="switch" style="margin-left: 14px;">
+  						<input id="animtgl" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  						<label for="animtgl"></label>
+						</div></li>
+					</ul>
+				</div>
+                <div>
+                <button style="margin-left: 4%;" id="savebtn" class="md-close">Save &amp; Close</button>
+                <button id="discardbtn" class="md-close">Discard Changes</button>
+                <button id="resetbtn" class="md-close">Reset All</button>
+                </div>
+			</div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+
+<audio id="bkgsnd" autoplay>
+	<source id="bkgsnd-src" src="" type="audio/mpeg"/>
+</audio>
+
+<script src="../../js/reveal.js"></script>
+<script>Reveal.initialize({slideNumber: false, progress: false, keyboard: {27:null}});</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>Quiz</title>
+<link rel="stylesheet" type="text/css" href="../../css/quiz.css">
+<link rel="shortcut icon" type="image/png" href="../../img/style/favico.png">
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/assist.css">
+<link rel="stylesheet" type="text/css" href="../../css/logo.css">
+</head>
+
+<body class="menu-active" style="background: #222;">
+<script src="../../js/quiz.js" defer></script>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/timesub.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript" src="../../js/assist.js" defer></script>
+<script src="../../js/three.min.js" defer></script>
+<script src="../../js/stats.min.js" defer></script>
+<script src="../../js/3d.js" defer></script>
+
+<nav class="main-nav" id="main-nav">
+<h2>Sidebar</h2>
+<div class="side-list">
+  <a href="../../index.html" onMouseOver="if (localStorage.mute == false) select.play()">Home</a>
+  <a href="html5.html" onMouseOver="if (localStorage.mute == false) select.play()">HTML5</a>
+  <a href="css3.html" onMouseOver="if (localStorage.mute == false) select.play()">CSS3</a>
+  <a href="jscript.html" onMouseOver="if (localStorage.mute == false) select.play()">JavaScript</a>
+  <a href="quiz_old.html" onMouseOver="if (localStorage.mute == false) select.play()">Quiz</a>
+  <a href="#" onMouseOver="if (localStorage.mute == false) select.play()" onClick="alert('Coming Soon!');">Help</a>
+  <a href="#" class="md-trigger" onMouseOver="if (localStorage.mute == false) select.play()">Settings</a>
+ </div>
+</nav>
+
+
+
+<div class="page-wrap" id="page-wrap">
+<div id="Div3D"></div>
+
+<header class="main-header" id="main-header">
+    <a id="nav-toggle" href="#" class=""><span></span></a>
+    <p id="HeadingTxt" style="font-weight: bold; left: 45%;">HTML TUTORIALS<span>&nbsp;</span></p>
+    <div id="DivTime"><img src="../../img/style/loading.gif" hspace="20" vspace="15"></img></div>
+</header>
+
+
+<div class="logo-container" onClick="window.location='../../index.html';">
+	<div class="flipper"><div class="frontlogo"></div><div class="backlogo"></div></div>
+</div>
+
+<audio id="select">
+	<source src="../../mp3/select.mp3" />
+</audio>
+
+<div id="DivVA">
+  <label for="tb" id="lbl" style="color:#fff;"><p id="va"></p></label>
+  <input type="text" name="tb" id="tb" placeholder="Enter text here"/>
+  <a type="submit" name="btn" id="btn" value="Submit" onclick="Process()" href="#" class="btn green">Submit</a>
+</div>
+
+
+<div class="maindiv">
+  <div class="question present"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div class="question future"></div>
+  <div id=progdiv>1 of 5</div>
+</div>
+
+</div>
+
+
+<div class="md-modal md-effect-8" id="modal-8">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+                    <div class="switch">
+  					<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+  					<label for="cmn-toggle-1"></label>
+					</div>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+</body>
+</html>

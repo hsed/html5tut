@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<body>
+<div id="FadeDiv" class=""></div>
+<div class="slides">
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+  <h2>Two-Dimensional (2D) Transformations</h2>
+  <div id="trans1" class="trnsf">Circle</div>
+  <div style="position: absolute; margin-left: 130px;"><p>CSS3 transformations are very similar to mathematical transformations; they allow you to alter a shape’s <strong>position</strong>, <strong>size</strong>, <strong>dimension</strong> or <strong>orientation</strong>. In CSS, transformation is a new type of property that can be applied to almost any standard HTML element. The logo on the right is a live example of this. It is transformed from a <strong>circle</strong> to a <strong>kite</strong> using standard CSS styles. Hovering over the logo will revert it back to its original shape. 3D transformations are not within the scope of this tutorial since it requires understanding of 3D shapes which is taught in A-level Further Maths.</p>
+<br />
+<p>CSS3 transformations consist of 4 types:</p>
+</div>
+<h2><br /></h2>
+<h2><br /></h2>
+<h2><br /></h2>
+<h2><br /></h2>
+<br />
+  <ul style="margin-left: -560px; list-style-type: upper-roman;">
+    <li>Translation </li>
+    <li>Rotation</li>
+    <li>Scale/Enlargement</li>
+    <li>Skew</li>
+  </ul>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+  <h2>Translation</h2>
+<p>This type of transformation allows a user to change the position of  a HTML element. The translation property value is commonly used when defining a  slide-in animation. The main header of this page makes use of translation. The  type of transformation is defined in the property&rsquo;s value section of a CSS code  block. To understand any transformation you will need to recap a bit of GCSE  maths. A translation property moves an object Npx in the &lsquo;horizontal-direction&rsquo;  (along the x-axis) and Mpx in the &lsquo;vertical-direction&rsquo; (along the y-axis).  Hence the code is:</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box:active { …  transform: translate(Mpx, Npx); …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<p>The example below is translated 200px to the right and 100px above (hence -100px) using the ease timing function. Notice the use of the 'active' CSS state for this example. To see the effect, you will need to <strong>click</strong> and <strong>hold</strong> the left mouse button.</p>
+<div id="box1"  class="trans pos">Translation</div>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+  <h2>Rotation</h2>
+<p>Rotations are one of the simplest form of  transformation. A good analogy of CSS3 rotations is the rotating of car wheels  when they are moving. CSS3 rotations can be used as a gimmick or to reveal  information behind an element. The main logo on each of this product uses this  transformation type to perform a &lsquo;flip&rsquo; effect. To define a rotation you only  need specify by how much amount to rotate an object in degrees. The symbol for  degrees in CSS is just &lsquo;deg&rsquo;! By default, positive values correspond to  clockwise rotation and negative values correspond to anticlockwise rotation.</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box:active { …  transform: rotate(405deg); …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<p>The example below is rotated 405&deg; clockwise using the linear timing function. To see the effect, you will need to <strong>click</strong> and <strong>hold</strong> the left mouse button on the box below.</p>
+<div id="box1"  class="trans rot">Rotation</div>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+  <h2>Scale (Enlargement) &amp; Stretch</h2>
+<p>The scale transformation allows users to  enlarge or reduce an object&rsquo;s height, base or both dimensions. Scale can be  used to create interactive buttons or logos which expand on hover. The scale  value can be defined from 0 to N. 
+A &lsquo;0.5&rsquo; scale value for example, is ¼ of the original shape&rsquo;s area as ½ * ½ = ¼. Beyond 1, the scale is used for  enlargement e.g. a &lsquo;2&rsquo; scale value means double the length &amp; width. ScaleX or ScaleY can be used to define a scale in only 1-dimension  making it effectively a stretch</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box:active { … transform: scale(1.5); …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<br />
+<p>Hover over the example below to see the effect</p>
+<div id="box1"  class="trans size">Scale</div>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+  <h2>Skew</h2>
+<p>This is one of the most complex form of  transformations. Its use must be carefully evaluated as it generally cannot be  used for just the sake of it. A skew is a type of transformation where the one  or more of the shape&rsquo;s dimensions is adjusted without affecting the overall  area of the shape. Hence for example if the width of a shape is reduced its  height increases and vice versa. Click the image below to see an example of a  skew in the x-direction.</p>
+<br />
+<p>A CSS3 skew transformation is defined in the same way  as translate: using angles (instead of pixels) along the x-axis and the y-axis.  To get the desired skew you will often need to test and experiment with  multiple values. The source code is shown below and some examples are displayed  on the next page.</p>
+<pre class="prettyprint lang-css"><code data-trim style="font-size: 18px;">
+<p>#Box:active { … transform: skew(20deg, 40deg); …}<br>
+/*Replace “…” with default properties such as size, default location, absolute position etc.*/
+</p>
+</code></pre>
+<br />
+<div style="position: absolute; left: 12%; top: 65%"><img src="../../img/tut/css3/4.svg" width="886" height="273" title="CSS3 Skew" style="border: none; box-shadow: none; background: none;"/></div>	
+</div>
+</section>
+
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformation</h6>
+  <h2>Some Examples of Skew</h2>
+<p>Hover over the shapes to see the effects in action. Each shape contains the description of its transition property's value.</p>
+ <h2><br /></h2>
+ <div class="tutbox skew1">Skew(20deg, 30deg)</div>
+ <div class="tutbox skew2">SkewY(30deg)</div>
+ <div class="tutbox skew3">Skew(-30deg, -20deg)</div>
+ <div class="tutbox skew4">SkewX(-45deg)</div>
+</div>
+</section>
+
+<section>
+<div id="DivContent" style="top: -288px;">
+<h6>CSS3 Transformations</h6>
+	<section id="fragments" style="top: 146px; display: block;" class="present">
+ 	<h2>Task #2</h2>
+ 	<p>Here is your second task of the CSS3 section. In this task you will be designing some basic animated buttons for use on your website. You need to:</p>
+<ol>
+  <li class="fragment roll-in visible" data-fragment-index="1">Use the CSS &amp; HTML file from the previous tutorial but make the background grey.</li>
+  <li  class="fragment roll-in visible" data-fragment-index="2">Delete the box element from the HTML file, create three new &lt;div&gt; elements and give them the same &lsquo;class&rsquo; name but different  &lsquo;ids&rsquo;.</li>
+  <li class="fragment roll-in visible" data-fragment-index="3">Each div side must measure <em>100px</em>. Add a '<em>1px dashed black</em>'<strong> border</strong> and set the <strong>display</strong> property to <em>'inline-block</em>' for each div. (hint: use the class selector for this task and id  selector for tasks 6-9).</li>
+  <li class="fragment roll-in visible" data-fragment-index="4">Add  an <em>ease </em> <strong>transition</strong> property to <em><strong>transform</strong></em>  which runs for <em>1s</em>.</li>
+  <li class="fragment roll-in visible" data-fragment-index="5">The first box should <em>translate</em> <em>50px</em> &rarr; &amp; <em>50px</em> &uarr; on hover.</li>
+  <li class="fragment roll-in visible" data-fragment-index="6">The second box should become <em>4 times</em> its original size on hover.</li>
+  <li class="fragment roll-in visible" data-fragment-index="7">The last box should <em>rotate</em> by <em>135deg </em> on  hover.</li>
+<br />
+    <p class="fragment roll-in visible" data-fragment-index="8" style="text-align: center; font-style:italic;">---End of slide---</p>
+</ol>
+	</section>
+</div>
+</section>
+<section>
+<div id="DivContent">
+<h6>CSS3 Transformations</h6>
+ <h2>Task #2 – Results</h2>
+ <p>If you were able to successfully accomplish this task your webpage should look like this:</p>
+ <video id="" preload="auto" height="320" autoplay loop>
+ 	<source src="../../vid/ctask.mp4" type="video/mp4">
+  </video>
+</div>
+</section>
+
+<section class="end-slide">
+       	<section>
+        	<h2>End of HTML5 Introduction</h2>
+				<p>End of Tutorial 1, please press <a href="#" class="navigate-down">down</a> if you have completed the tutorial or <a href="#\0">here</a> to restart it.</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="../../img/style/next.png" alt="Down arrow">
+						</a>
+        </section>
+       	<section id="end-slide"><p>Please wait while you are redirected...</p></section>
+       </section>
+</div>
+<var id="tutinfo" style="display: none;">{"newlvl": 13, "sect":"css3", "url":"trnsf", "newurl":"anim"}</var>
+</body>
+</html>

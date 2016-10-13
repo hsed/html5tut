@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="va">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width"/>
+<title>HTML5 Tutorials</title>
+<link rel="shortcut icon" type="image/png" href="../../img/style/favico.png">
+<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/assist.css">
+<link rel="stylesheet" type="text/css" href="../../css/animation_webkit.css">
+</head>
+
+<body class="menu-active va" style="background: #000">
+<SCRIPT src="../../js/anim.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../js/main.js" type="text/javascript"></SCRIPT>
+<script src="../../js/three.min.js" ></script>
+<script type="text/javascript" src="../../js/assist.js" defer></script>
+<script src="../../js/3d.js" defer></script>
+<script defer>
+setTimeout(function() { LoadObj(); }, 3000);
+function Bounce(w) {
+
+        window.blur();
+        w.focus();
+}
+</script>
+
+<div class="page-wrap main">
+<div id="Div3D"></div>
+
+
+<div id="DivVA">
+  <label for="tb" id="lbl" style="color:#fff;"><p id="va"></p></label>
+  <input type="text" name="tb" id="tb" placeholder="Enter text here"/>
+  <a type="submit" name="btn" id="btn" value="Submit" onclick="Process()" href="#" class="btn green">Submit</a>
+ </div>
+ 
+</div>
+</body>
+</html>
